@@ -6,12 +6,12 @@ class ApplicationController < Sinatra::Base
 
   # code actions here!
 
-  configure do 
+  configure do
     set :public_folder, 'public'
     set :views, 'app/views'
   end
 
-  get '/recipes/new' do 
+  get '/recipes/new' do
     erb :new
   end
 
